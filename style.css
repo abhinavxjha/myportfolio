@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #191919;
+}
+
+.head-container {
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+    
+#navbar {
+    background-color:rgb(191, 154, 51);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.parts {
+    margin: 20px;
+}
+
+.main-container {
+    width: 50%;
+    display: flex;
+    margin-left: 50%;
+    margin-top: 5%;
+    
+}
+
+#head1 {
+    color: rgb(191, 154, 51);
+    font-family: poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#head2 {
+    color: rgb(191, 154, 51);
+    font-family: poppins, sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#head3 {
+    color: rgb(191, 154, 51);
+    font-family: poppins, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#para1 {
+    color: rgb(191, 154, 51);
+    font-family: poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+#l1 {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+   
+}
+
+#l2 {
+    color: black;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+#prohead {
+    text-align: center;
+    color:rgb(191, 154, 51);
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    margin-top: 5%;
+}
+
+button {
+    text-align: center;
+    background-color: #181818;
+    color: rgb(163, 136, 111);
+    border: none;
+    padding: 20px 45px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 9px 13px 13px rgb(0, 0, 0);
+    cursor: pointer;
+    margin: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+}
+
+button:hover {
+    background-color: rgb(191, 154, 51);
+    color: #181818;
+    box-shadow: 0px 0px 0px rgb(0, 0, 0);
+}
+
+.button-container {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+}
+
+img {
+    border-radius: 50%;
+    box-shadow: 1px 9px 9px 3px rgb(0, 0, 0, 0.5);
+    left: 150px;
+    top:230px;
+    position:absolute;
+    height: 250px;
+} 
+
+a {
+    transition: text-decoration 0.5s ease, text-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+a:hover {
+    text-shadow: 1px 1px 3px  #191919;
+    text-decoration: underline;
+}
+
+.end-container {
+    text-align: center;
+    margin-top: 5%;
+}
+
+#endparts {
+    font-size: 20px;
+}
+
+#endhead {
+    text-align: center;
+    color: rgb(191, 154, 51);
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    margin-top: 7%;
+}
+    
+/* Add these to your existing style.css */
+
+/* Responsive base styles */
+@media (max-width: 768px) {
+    #navbar {
+        height: auto;
+        padding: 15px 20px;
+        flex-direction: column;
+    }
+    
+    .head-container {
+        display: block;
+        text-align: center;
+    }
+    
+    #moreportfolio {
+        margin-top: 15px;
+    }
+    
+    .parts {
+        margin: 10px;
+        display: inline-block;
+    }
+    
+    img {
+        position: relative;
+        left: auto;
+        top: auto;
+        margin: 20px auto;
+        display: block;
+        height: 200px;
+    }
+    
+    .main-container {
+        width: 90%;
+        margin: 20px auto;
+        padding: 1rem;
+    }
+    
+    #head2 {
+        font-size: 36px;
+    }
+    
+    #head3 {
+        font-size: 24px;
+    }
+    
+    #para1 {
+        font-size: 16px;
+    }
+    
+    .button-container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    button {
+        padding: 15px 30px;
+        margin: 10px;
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .main-container {
+        width: 60%;
+        margin-left: 40%;
+    }
+    
+    img {
+        left: 50px;
+        height: 220px;
+    }
+    
+    .button-container {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
+    button {
+        padding: 18px 36px;
+        margin: 15px;
+        display: inline-block;
+        width: auto;
+    }
+}
