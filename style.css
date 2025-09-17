@@ -11,10 +11,18 @@ body {
 .head-container {
     display: inline-block;
     vertical-align: middle;
-   
-
+    opacity: 0;
+    animation: fadeIn 0.8s 0.5s forwards;
 }
-    
+ 
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
 #navbar {
     
     height: 90px;
@@ -45,11 +53,52 @@ body {
 
 .main-container {
     width: 50%;
-    display: flex;
+    display: inline-block;
     margin-left: 50%;
     margin-top: 5%;
-    
+    opacity: 0;
+    transform: translateY(20px);
+    animation: textJump 0.8s forwards;
 }
+
+
+
+[class^="delay-"], [class*=" delay-"] {
+    opacity: 0;
+    transform: translateY(20px);
+    animation-name: textJump;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+.delay-5 { animation-delay: 0.5s; }
+.delay-6 { animation-delay: 0.6s; }
+.delay-7 { animation-delay: 0.7s; }
+.delay-8 { animation-delay: 0.8s; }
+.delay-9 { animation-delay: 0.9s; }
+.delay-10 { animation-delay: 1.0s; }
+.delay-11 { animation-delay: 1.1s; }
+.delay-12 { animation-delay: 1.2s; }
+
+
+@keyframes textJump {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    60% {
+        transform: translateY(-8px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 #head1 {
     color: rgb(191, 154, 51);
@@ -102,6 +151,7 @@ body {
     color:rgb(191, 154, 51);
     text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
     margin-top: 5%;
+    
 }
 
 button {
@@ -131,6 +181,7 @@ button:hover {
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 3%;
+    
 }
 
 img {
@@ -144,15 +195,16 @@ img {
 } 
 
 a {
-    transition: text-decoration 0.5s ease, text-shadow 0.3s ease;
+    transition: text-decoration 0.5s ease, color 0.5s ease, text-shadow 0.3s ease;
     cursor: pointer;
     text-decoration: none;
     color: black
 }
 
 a:hover {
-    text-shadow: 1px 1px 3px  #191919;
-    /* text-decoration: underline; */
+    color: white;
+    text-shadow: 2px 2px 6px  #191919;
+    /* text-decoration: underline;  */
 }
 
 .end-container {
@@ -171,7 +223,7 @@ a:hover {
     margin-top: 7%;
 }
     
-/* Add these to your existing style.css */
+
 
 /* Responsive base styles */
 @media (max-width: 768px) {
@@ -190,13 +242,13 @@ a:hover {
         position: static;
         left: auto;
         transform: none;
-        margin-top: 12px; /* adjust to taste */
+        margin-top: 12px; 
         justify-content: center;
         flex-wrap: wrap;
     }
 
     #headportfolio {
-        margin-bottom: 8px; /* optional extra space under "PORTFOLIO" */
+        margin-bottom: 8px; 
     }
     
     .parts {
@@ -279,21 +331,22 @@ a:hover {
     }
 }
 
-
-
-
-
-/* @media (-webkit-min-device-pixel-ratio: 2) {
-    body {
-        -webkit-tap-highlight-color: transparent;
-
-    }
-} */
-
-
 html {
   scroll-behavior: smooth;
 }
+
+
+
+    
+
+
+
+
+
+
+
+
+
 
 
 
