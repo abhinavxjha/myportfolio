@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Abhinav Jha | Portfolio</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a class="textm" href="#title">PORTFOLIO</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#main">MAIN</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#project">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section id="firstsection">
+        <div id="main" class="main reveal">
+            <p class="eyebrow">Hey, I'm</p>
+            <h1 id="name">Abhinav Jha</h1>
+            <h2 id="info">Student at Jaypee University of Information Technology, Solan</h2>
+            <h3 id="info1">Member of
+                Technical Sciences, Movies &amp; Photography Club</h3>
+            <p id="info2">I'm an engineering student who likes building useful projects and learning new tech. I enjoy coding, solving problems, and improving my skills step by step.</p>
+            <div class="social-row">
+                <a href="https://www.instagram.com/xabhinavjha?igsh=Z21vOGhhMjVqZWs4" target="_blank" rel="noopener"><i id="social" class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/abhinav-jha-a52386367" target="_blank" rel="noopener"><i id="social" class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/abhinavxjha" target="_blank" rel="noopener"><i id="social" class="fab fa-github"></i></a>
+                <a href="https://twitter.com/iam_abhinavjha" target="_blank" rel="noopener"><i id="social" class="fab fa-twitter"></i></a>
+            </div>
+            <div><button id="downloadbtn"><a href="AbhinavJhaResume1.pdf" download>Resume <i class="fa-solid fa-download"></i></a></button></div>
+        </div>
+        <div id="profile-pic" class="reveal">
+            <div class="pic-ring"></div>
+            <img class="mine" src="Solancrop.jpeg" alt="Profile Picture" width="200" height="200">
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <p class="eyebrow center">What I work with</p>
+        <h2>SKILLS</h2>
+        <div class="skill">
+
+            <div class="skill1 reveal">
+                <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                <h3>Languages</h3>
+                <div class="chips">
+                    <span class="chip">C</span>
+                    <span class="chip">C++</span>
+                    <span class="chip">Python</span>
+                    <span class="chip">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="skill1 reveal">
+                <div class="skill-icon"><i class="fa-solid fa-globe"></i></div>
+                <h3>Web Development</h3>
+                <div class="chips">
+                    <span class="chip"><i class="fa-brands fa-html5"></i> HTML5</span>
+                    <span class="chip"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                </div>
+            </div>
+
+            <div class="skill1 reveal">
+                <div class="skill-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <h3>Data Science &amp; ML</h3>
+                <div class="chips">
+                    <span class="chip">NumPy</span>
+                    <span class="chip">Pandas</span>
+                    <span class="chip">Matplotlib</span>
+                    <span class="chip">Plotly</span>
+                    <span class="chip">scikit-learn</span>
+                </div>
+            </div>
+
+            <div class="skill1 reveal">
+                <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                <h3>Databases</h3>
+                <div class="chips">
+                    <span class="chip">MySQL</span>
+                </div>
+            </div>
+
+            <div class="skill1 reveal">
+                <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+                <h3>Tools &amp; Version Control</h3>
+                <div class="chips">
+                    <span class="chip"><i class="fa-brands fa-git-alt"></i> Git</span>
+                    <span class="chip"><i class="fa-brands fa-github"></i> GitHub</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="thirdsection">
+        <div class="projects" id="project">
+            <p class="eyebrow center">Things I've built</p>
+            <h2>PROJECTS</h2>
+
+            <div class="project-grid">
+
+                <article class="project-card reveal featured">
+                    <div class="project-top">
+                        <span class="tag-live"><i class="fa-solid fa-circle"></i> Live</span>
+                        <h3>Career Recommendation System</h3>
+                    </div>
+                    <p class="project-desc">A web-based application that suggests suitable career paths based on a user's skills, and shows exactly what to learn next to get there.</p>
+                    <ul class="project-points">
+                        <li>Top 5 matched careers, Skill Gap Analysis, and a Career Readiness Score</li>
+                        <li>Personalized Learning Roadmap with a course recommendation engine for identified skill gaps</li>
+                        <li>Accepts input via manual skill entry or PDF resume parsing</li>
+                        <li>Interactive dashboard with responsive UI and data visualizations</li>
+                    </ul>
+                    <div class="stack-row">
+                        <span class="stack-chip">Python</span>
+                        <span class="stack-chip">Streamlit</span>
+                        <span class="stack-chip">NumPy</span>
+                        <span class="stack-chip">Pandas</span>
+                        <span class="stack-chip">Matplotlib</span>
+                        <span class="stack-chip">Plotly</span>
+                        <span class="stack-chip">PDFPlumber</span>
+                        <span class="stack-chip">JSON</span>
+                    </div>
+                    <a class="project-link" href="https://yourcareerrecommendationsystem.streamlit.app/" target="_blank" rel="noopener">
+                        Try it live <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-top">
+                        <h3>Automated Facial Recognition Attendance System</h3>
+                    </div>
+                    <p class="project-desc">An automatic system that recognises students' faces for daily classroom attendance, so teachers don't have to spend class time on roll calls.</p>
+                    <ul class="project-points">
+                        <li>Python for camera handling and face recognition logic</li>
+                        <li>MySQL for attendance record management</li>
+                    </ul>
+                    <div class="stack-row">
+                        <span class="stack-chip">Python</span>
+                        <span class="stack-chip">MySQL</span>
+                        <span class="stack-chip">OpenCV</span>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-top">
+                        <h3>AI-Based Private Security Camera System</h3>
+                    </div>
+                    <p class="project-desc">A private security camera system with real-time object detection built for hands-on experience with computer vision.</p>
+                    <ul class="project-points">
+                        <li>Python + OpenCV for live video capture and frame processing</li>
+                        <li>YOLO model for real-time object detection on the camera feed</li>
+                    </ul>
+                    <div class="stack-row">
+                        <span class="stack-chip">Python</span>
+                        <span class="stack-chip">OpenCV</span>
+                        <span class="stack-chip">YOLO</span>
+                    </div>
+                </article>
+
+                <article class="project-card reveal coming-soon">
+                    <div class="project-top">
+                        <h3>More on the way</h3>
+                    </div>
+                    <p class="project-desc">Building soon <span class="pulse-dot"></span></p>
+                    <p class="project-desc small">New projects are currently in the works — check back soon or follow along on GitHub.</p>
+                    <a class="project-link" href="https://github.com/abhinavxjha" target="_blank" rel="noopener">
+                        Follow progress <i class="fa-brands fa-github"></i>
+                    </a>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contacts">
+        <p class="eyebrow center">Let's talk</p>
+        <h2>CONTACT</h2>
+        <div class="contact">
+            <div class="contact1"><a href="mailto:abhinavjha505@gmail.com"><i class="fa-solid fa-envelope"></i> abhinavjha505@gmail.com</a></div>
+            <div class="contact1"><a href="https://www.linkedin.com/in/abhinav-jha-a52386367" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></div>
+            <div class="contact1"><a href="https://github.com/abhinavxjha" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a></div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-social">
+            <a href="https://www.instagram.com/xabhinavjha?igsh=Z21vOGhhMjVqZWs4" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/abhinav-jha-a52386367" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/abhinavxjha" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/iam_abhinavjha" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; <span id="year"></span> Abhinav Jha &mdash; Solan, Himachal Pradesh</p>
+        <p class="footer-sub">Built with HTML, CSS &amp; a lot of curiosity.</p>
+    </footer>
+
+    <a href="#title" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <script src="app2.js"></script>
+</body>
+</html>
