@@ -269,7 +269,7 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.4);
     font-size: 1rem;
     background-color: var(--card);
-    transition: all 0.3s ease;
+    transition: background-color 0.45s ease, color 0.45s ease, border-color 0.45s ease, box-shadow 0.45s ease, transform 0.3s ease;
     box-shadow: var(--shadow);
     text-align: left;
     cursor: pointer;
@@ -293,7 +293,7 @@ body {
     font-size: 1.6rem;
     color: var(--accent);
     margin-bottom: 0.8rem;
-    transition: color 0.3s ease;
+    transition: color 0.45s ease;
 }
 
 .skill1:hover .skill-icon {
@@ -321,7 +321,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    transition: background 0.3s ease;
+    transition: background 0.45s ease, color 0.45s ease;
 }
 
 .skill1:hover .chip {
@@ -351,7 +351,7 @@ body {
     border-radius: 15px;
     padding: 1.8rem;
     box-shadow: var(--shadow);
-    transition: all 0.3s ease;
+    transition: background-color 0.45s ease, background 0.45s ease, color 0.45s ease, border-color 0.45s ease, box-shadow 0.45s ease, transform 0.3s ease;
     display: flex;
     flex-direction: column;
     gap: 0.9rem;
@@ -370,11 +370,11 @@ body {
 
 .project-card.featured {
     border: 1px solid var(--accent);
-    background: linear-gradient(155deg, var(--card) 0%, var(--card-soft) 100%);
+    background-color: var(--card);
 }
 
 .project-card.featured:hover {
-    background: var(--accent);
+    background-color: var(--accent);
 }
 
 .project-top {
@@ -387,6 +387,7 @@ body {
     font-size: 1.15rem;
     font-weight: 700;
     color: white;
+    transition: color 0.45s ease;
 }
 
 .project-card:hover .project-top h3,
@@ -415,6 +416,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
+    transition: background 0.45s ease, color 0.45s ease;
 }
 
 .tag-live i {
@@ -432,6 +434,7 @@ body {
     color: var(--muted);
     font-size: 0.95rem;
     line-height: 1.55;
+    transition: color 0.45s ease;
 }
 
 .project-desc.small {
@@ -451,6 +454,7 @@ body {
     padding-left: 1.1rem;
     position: relative;
     line-height: 1.4;
+    transition: color 0.45s ease;
 }
 
 .project-points li::before {
@@ -461,7 +465,12 @@ body {
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: var(--accent);
+    background-color: var(--accent);
+    transition: background-color 0.45s ease;
+}
+
+.project-card:hover .project-points li::before {
+    background-color: black;
 }
 
 .stack-row {
@@ -478,7 +487,7 @@ body {
     font-weight: 500;
     padding: 0.3rem 0.7rem;
     border-radius: 20px;
-    transition: all 0.3s ease;
+    transition: background 0.45s ease, color 0.45s ease;
 }
 
 .project-card:hover .stack-chip {
@@ -495,7 +504,11 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    transition: all 0.3s ease;
+    transition: color 0.45s ease, gap 0.45s ease;
+}
+
+.project-card:hover .project-link {
+    gap: 0.8rem;
 }
 
 .project-link:hover {
@@ -508,11 +521,24 @@ body {
     align-items: flex-start;
     border-style: dashed;
     border-color: rgba(255, 255, 255, 0.25);
-    background: rgba(255, 255, 255, 0.02);
+    background-color: rgba(255, 255, 255, 0.02);
 }
 
 .project-card.coming-soon:hover {
+    background-color: var(--accent);
     border-color: var(--accent);
+}
+
+.project-card.coming-soon .project-top h3,
+.project-card.coming-soon .project-desc,
+.project-card.coming-soon .project-link {
+    transition: color 0.45s ease;
+}
+
+.project-card.coming-soon:hover .project-link,
+.project-card.coming-soon .project-link:hover {
+    color: black;
+    transition: color 0.45s ease, gap 0.45s ease;
 }
 
 .pulse-dot {
@@ -520,9 +546,14 @@ body {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: var(--accent);
+    background-color: var(--accent);
     margin-left: 0.4rem;
     animation: pulse 1.4s infinite;
+    transition: background-color 0.45s ease;
+}
+
+.project-card.coming-soon:hover .pulse-dot {
+    background-color: black;
 }
 
 /* ---------- Contact ---------- */
@@ -701,9 +732,19 @@ body {
     transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
+.skill1.reveal,
+.project-card.reveal {
+    transition: opacity 0.7s ease, transform 0.7s ease, background-color 0.45s ease, color 0.45s ease, border-color 0.45s ease, box-shadow 0.45s ease;
+}
+
 .reveal.in-view {
     opacity: 1;
     transform: translateY(0);
+}
+
+.skill1.reveal.in-view:hover,
+.project-card.reveal.in-view:hover {
+    transform: translateY(-8px);
 }
 
 @media (prefers-reduced-motion: reduce) {
